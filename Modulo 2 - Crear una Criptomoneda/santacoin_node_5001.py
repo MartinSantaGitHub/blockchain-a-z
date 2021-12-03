@@ -86,7 +86,7 @@ def connect_node():
         return 'There is no nodes to add', 400
 
     for node in nodes:
-        blockchain.add_node(node)
+        blockchain.add_node(blockchain.nodes)
 
     response = {
         'message': 'All the nodes were connected. The Santa blockchain contains the next nodes in \'total_nodes\'',

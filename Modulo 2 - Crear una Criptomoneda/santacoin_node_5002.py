@@ -90,7 +90,7 @@ def connect_node():
 
     response = {
         'message': 'All the nodes were connected. The Santa blockchain contains the next nodes in \'total_nodes\'',
-        'total_nodes': list(nodes)}
+        'total_nodes': list(blockchain.nodes)}
 
     return jsonify(response), 201
 
